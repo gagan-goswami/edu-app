@@ -30,7 +30,7 @@ function Counter() {
                   <CountUp end={29.3} duration={2.5} separator="," />
                 ) : (
                   "0"
-                )}{" "}
+                )}
                 K
               </h3>
               <p>STUDENT ENROLLED</p>
@@ -43,7 +43,7 @@ function Counter() {
                   <CountUp end={32.4} duration={2.5} separator="," />
                 ) : (
                   "0"
-                )}{" "}
+                )}
                 K
               </h3>
               <p>Class Completed</p>
