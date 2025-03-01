@@ -64,7 +64,7 @@ function Courses() {
             aria-labelledby="pills-home-tab"
           >
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="courses-box ">
                   <div className="courses-image">
                     <img src={Courses1} alt="Course" className="img-fluid" />
@@ -96,10 +96,11 @@ function Courses() {
                         </li>
                       </ul>
                     </div>
+                    <a href="/">Learn More</a>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="courses-box ">
                   <div className="courses-image">
                     <img src={Courses2} alt="Course" className="img-fluid" />
@@ -131,10 +132,11 @@ function Courses() {
                         </li>
                       </ul>
                     </div>
+                    <a href="/">Learn More</a>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="courses-box ">
                   <div className="courses-image">
                     <img src={Courses3} alt="Course" className="img-fluid" />
@@ -166,6 +168,7 @@ function Courses() {
                         </li>
                       </ul>
                     </div>
+                    <a href="/">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -178,7 +181,7 @@ function Courses() {
             aria-labelledby="pills-profile-tab"
           >
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="courses-box ">
                   <div className="courses-image">
                     <img src={Courses1} alt="Course" className="img-fluid" />
@@ -209,10 +212,11 @@ function Courses() {
                         </li>
                       </ul>
                     </div>
+                    <a href="/">Learn More</a>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="courses-box">
                   <div className="courses-image">
                     <img src={Courses2} alt="Course" className="img-fluid" />
@@ -243,6 +247,7 @@ function Courses() {
                         </li>
                       </ul>
                     </div>
+                    <a href="/">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -255,7 +260,7 @@ function Courses() {
             aria-labelledby="pills-contact-tab"
           >
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 mb-4">
                 <div className="courses-box ">
                   <div className="courses-image">
                     <img src={Courses3} alt="Course" className="img-fluid" />
@@ -286,6 +291,7 @@ function Courses() {
                         </li>
                       </ul>
                     </div>
+                    <a href="/">Learn More</a>
                   </div>
                 </div>
               </div>

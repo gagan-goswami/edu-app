@@ -377,7 +377,7 @@
 }
 
 .courses-section .courses-content h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--dark);
   margin: 20px 0px 10px 0px;
@@ -401,6 +401,17 @@
 .courses-section .courses-content ul li {
   font-size: 16px;
   color: #f7b61e;
+}
+
+.courses-section .courses-content a {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 /* ====courses-section-end==== */
