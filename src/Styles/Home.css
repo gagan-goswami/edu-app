@@ -1,0 +1,425 @@
+/* ====hero-slider-start==== */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--white);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(8, 8, 8, 0.986),
+    rgba(94, 62, 2, 0.144)
+  );
+  z-index: -1;
+}
+
+.slider .slider-content {
+  margin-right: 20%;
+}
+
+.slider .slider-content span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f7ae39;
+}
+
+.slider .slider-content h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 20px 0px;
+}
+
+.slider .slider-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.slider .slider-content .btn {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--primary-color);
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* ====hero-slider-end==== */
+
+/* ====function-section-start==== */
+
+.function-section {
+  padding: 45px 0px;
+  background-color: var(--white);
+}
+
+.function-section .function-box {
+  padding: 10px;
+}
+
+.function-section svg {
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.function-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.function-box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 0;
+}
+
+/* ====function-section-end==== */
+
+/* ====about-section-start==== */
+
+.about-section {
+  padding: 45px 0px;
+  background-color: var(--bg-color-primary);
+}
+
+.about-section .about-content span {
+  font-size: 18px;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.about-section .about-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 20px 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.about-section .tab-pane {
+  padding: 20px 0px;
+}
+
+.about-section .nav-link.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.about-section .nav-item button {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  font-family: "League Spartan", sans-serif;
+}
+
+.about-section .tab-pane p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.about-section .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section .tab-pane ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.about-section .tab-pane ul li svg {
+  color: var(--primary-color);
+}
+
+.about-section .about-image {
+  position: relative;
+  z-index: 1;
+}
+
+.about-section .about-image::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: 0;
+  background: url(../assets/images/shape-1.png);
+  z-index: -1;
+}
+
+.about-section .about-image img {
+  border-radius: 10px;
+}
+
+.about-section .about-image .about-image-2 {
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+  right: 0px;
+  height: 100px;
+}
+
+/* ====about-section-end==== */
+
+/* ====counter-section-start==== */
+
+.counter-section {
+  padding: 90px 0px;
+  background-color: var(--white);
+}
+
+.counter-section .counter-box {
+  padding: 40px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background-color: var(--bg-color-primary);
+}
+
+.counter-section .counter-box h3,
+.counter-section .counter-box span {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.counter-section .counter-box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 0;
+}
+
+/* ====counter-section-end==== */
+
+/* ====courses-section-start==== */
+
+.courses-section {
+  padding: 45px 0px;
+  background-color: var(--bg-color-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.courses-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../assets/images/map-shape.png);
+  z-index: -1;
+}
+
+.courses-section .section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.courses-section .section-title span {
+  font-size: 18px;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.courses-section .section-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 20px 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.courses-section .courses-box {
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 100%;
+}
+
+.courses-section .courses-box img {
+  width: 100%;
+}
+
+.courses-section .courses-box .courses-image span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #f7ae39;
+  color: var(--dark);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.courses-section .nav {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.nav-pills .nav-link {
+  color: var(--dark);
+}
+
+.courses-section .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses-section .courses-content {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.courses-section .courses-content span {
+  background-color: #ed4a6246;
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.courses-section .courses-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--dark);
+  margin: 20px 0px 10px 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.courses-section .courses-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.courses-section .courses-content ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+
+.courses-section .courses-content ul li {
+  font-size: 16px;
+  color: #f7b61e;
+}
+
+/* ====courses-section-end==== */
+
+/* ====campus-section-start==== */
+
+.campus-section {
+  padding: 90px 0px;
+}
+
+.campus-section .campus-box span {
+  font-size: 18px;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.campus-section .campus-box h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark);
+  margin: 20px 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.campus-section .campus-box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.campus-section .campus-box svg {
+  font-size: 16px;
+  font-weight: 400;
+  background: #eed0d4;
+  color: var(--primary-color);
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.campus-section .campus-box,
+.campus-section .campus-box img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ====campus-section-end==== */

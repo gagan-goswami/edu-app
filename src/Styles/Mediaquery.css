@@ -1,0 +1,22 @@
+@media screen and (max-width: 425px) {
+  .header-section .contact-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slider .slider-content {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider .slider-content h2 {
+    font-size: 40px;
+  }
+
+  .about-section .about-content h2,
+  .courses-section .section-title h2 {
+    font-size: 30px;
+  }
+}

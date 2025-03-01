@@ -1,0 +1,109 @@
+/* ====== header-section ====== */
+/*========== menu bar-start =========*/
+
+.header-section {
+  background-color: var(--bg-primery-color);
+}
+
+.header-section .is-sticky-menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+  animation: slideInDown;
+  animation-duration: 0.5s;
+  padding: 5px 0px;
+  background-color: var(--white);
+}
+
+.header-section.navbar-brand:focus,
+.header-section .navbar-brand:hover {
+  color: var(--Secondary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.header-section .menu-bar .nav-link,
+.offcanvas-body .nav-link {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  z-index: 2;
+  margin-right: 5px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.header-section .menu-bar .nav-item .nav-link:hover,
+.offcanvas-body .nav-link:hover {
+  color: var(--Secondary-color);
+}
+
+.offcanvas-body .navbar-nav .nav-link.active,
+.offcanvas-body .navbar-nav .nav-link.show,
+.header-section .menu-bar .nav-item .nav-link.active {
+  color: var(--Secondary-color);
+}
+
+.header-section .menu-bar .nav-item .nav-link,
+.offcanvas-body .nav-link {
+  color: var(--primary-color);
+}
+
+.header-section .navbar-toggler {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px;
+  margin: 0px;
+  border: 1px solid white;
+  margin-right: 5px;
+}
+
+.header-section .navbar-toggler svg {
+  height: 25px;
+  width: 25px;
+}
+
+.header-section .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header-section .sibar-toggle {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 10px;
+}
+
+.header-section .contact-btn {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-section .contact-btn a {
+  color: var(--white);
+}
+
+.offcanvas-header .btn-close {
+  color: var(--dark);
+  background-color: var(--primary-color);
+  opacity: 1;
+}
+
+/*========== menu bar-end =========*/
+/*========== header-end =========*/
